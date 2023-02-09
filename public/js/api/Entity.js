@@ -29,7 +29,7 @@ class Entity {
     createRequest({
       url: this.URL,
       method: 'PUT',
-      data: data, 
+      data: data,
       callback: callback
     })
   }

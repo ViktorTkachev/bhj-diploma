@@ -97,11 +97,10 @@ class TransactionsPage {
    * */
   render( options ) {
     if ( options ) {
-      console.log(options);
       this.lastOptions = options;
       Account.get(options.account_id, (err, response) => {
         if (response.success) {
-          console.log(response);
+          // console.log(response);
           this.renderTitle(response.data.name);
         } else if (err) {
           console.error('Error 11');
@@ -190,17 +189,18 @@ class TransactionsPage {
    * используя getTransactionHTML
    * */
   renderTransactions(data){
-    const contentTransactions = this.element.querySelector('.content');
-    // console.log(contentTransactions);
-    // Array.from(data, item => {
-    //   let currentTransaction = this.getTransactionHTML(item);
-    //   contentTransactions.insertAdjacentHTML('beforeend', currentTransaction);
-    // })
-    // for (let i = 0; i < data.length; i++) {
-    //   let currentTransaction = this.getTransactionHTML(data[i]);
-    //   contentTransactions.insertAdjacentHTML('beforeend', currentTransaction);
+    const allTransactions = this.element.querySelectorAll('.transaction');
+    Array.from(allTransactions, item => item.remove());
+
+    if ( data.length !== 0 ) {
+      Array.from(data, item => {
+        console.log(item);
+        let currentTransaction = this.getTransactionHTML(item);
+        contentTransactions.insertAdjacentHTML('beforeend', this.element.querySelector('.content'));
+      });
+    }
+    //  else {
+    //   console.error('У вас нет транзакций в данном счете!');
     // }
-    let currentTransaction = this.getTransactionHTML(data);
-    contentTransactions.insertAdjacentHTML('beforeend', currentTransaction);
   }
 }

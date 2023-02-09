@@ -31,12 +31,24 @@ class AccountsWidget {
    * вызывает AccountsWidget.onSelectAccount()
    * */
   registerEvents() {
-    this.element.querySelector( '.create-account' ).onclick = () => {
-      App.getModal( 'createAccount' ).open();
-    }
-    this.element.onclick = e => {
-      // console.log(e.target.closest('.account'));
-      this.onSelectAccount(e.target.closest('.account'))
+    // this.element.querySelector( '.create-account' ).onclick = () => {
+    //   App.getModal( 'createAccount' ).open();
+    // }
+    // this.element.onclick = e => {
+    //   console.log(e.target.closest('.account'));
+    //   this.onSelectAccount(e.target.closest('.account'))
+    // };
+
+
+    this.element.onclick = (e) => {
+      if (e.target.classList.contains('create-account')) {
+        App.getModal('createAccount').open();
+      } else {
+        e.preventDefault();
+        if (e.target.closest('.account')) {
+          this.onSelectAccount(e.target.closest('.account'));
+        }
+      }
     };
   }
 

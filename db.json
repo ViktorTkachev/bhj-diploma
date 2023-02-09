@@ -14,11 +14,6 @@
       "id": "1"
     },
     {
-      "name": "Магазин",
-      "user_id": "1",
-      "id": "2"
-    },
-    {
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
@@ -27,36 +22,6 @@
       "name": "Viktor Tkachev",
       "user_id": "1",
       "id": "nvn9i161nldmunntm"
-    },
-    {
-      "name": "Tkachev",
-      "user_id": "1",
-      "id": "nvn9i165qldmuyiyn"
-    },
-    {
-      "name": "Tkachev1",
-      "user_id": "1",
-      "id": "nvn9i1679ldmv03jr"
-    },
-    {
-      "name": "dddd",
-      "user_id": "1",
-      "id": "nvn9i16kwldmz1czb"
-    },
-    {
-      "name": "dddde",
-      "user_id": "1",
-      "id": "nvn9i186tldokq6ep"
-    },
-    {
-      "name": "Tkachev12",
-      "user_id": "1",
-      "id": "nvn9i18ikldom3ezg"
-    },
-    {
-      "name": "2233",
-      "user_id": "1",
-      "id": "nvn9i18mbldomhdfk"
     }
   ],
   "transactions": [
@@ -85,51 +50,6 @@
       "name": "Копилка",
       "sum": 1500,
       "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-26 16:23:02",
-      "id": "4",
-      "name": "Молочные продукты",
-      "sum": 100,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-25 15:03:02",
-      "id": "5",
-      "name": "Фрукты",
-      "sum": 250,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-25 15:03:02",
-      "id": "17",
-      "name": "Овощи",
-      "sum": 300,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-26 14:47:02",
-      "id": "6",
-      "name": "Мясо",
-      "sum": 600,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-27 13:27:02",
-      "id": "7",
-      "name": "Долг в банк",
-      "sum": 5000,
-      "type": "expense",
       "user_id": "1"
     },
     {
@@ -205,60 +125,6 @@
       "created_at": "2023-02-01T06:59:26.030Z"
     },
     {
-      "id": "nvn9i16lqldmz1mk1",
-      "type": "income",
-      "name": "Tkachev",
-      "sum": 4000,
-      "account_id": "nvn9i165qldmuyiyn",
-      "user_id": "1",
-      "created_at": "2023-02-02T10:45:34.704Z"
-    },
-    {
-      "id": "nvn9i187hldokqgzx",
-      "type": "income",
-      "name": "dddd",
-      "sum": 4000,
-      "account_id": "nvn9i165qldmuyiyn",
-      "user_id": "1",
-      "created_at": "2023-02-03T13:40:32.012Z"
-    },
-    {
-      "id": "nvn9i1885ldokqu7t",
-      "type": "expense",
-      "name": "Viktor Tkachev",
-      "sum": 4000,
-      "account_id": "nvn9i165qldmuyiyn",
-      "user_id": "1",
-      "created_at": "2023-02-03T13:40:49.144Z"
-    },
-    {
-      "id": "nvn9i18a6ldoktkvc",
-      "type": "expense",
-      "name": "Viktor Tkachev",
-      "sum": 4000,
-      "account_id": "nvn9i165qldmuyiyn",
-      "user_id": "1",
-      "created_at": "2023-02-03T13:42:56.999Z"
-    },
-    {
-      "id": "nvn9i18auldoktyhe",
-      "type": "income",
-      "name": "Viktor Tkachev",
-      "sum": 4000,
-      "account_id": "nvn9i165qldmuyiyn",
-      "user_id": "1",
-      "created_at": "2023-02-03T13:43:14.641Z"
-    },
-    {
-      "id": "nvn9i18bkldoku4lj",
-      "type": "expense",
-      "name": "Viktor Tkachev",
-      "sum": 4000,
-      "account_id": "nvn9i165qldmuyiyn",
-      "user_id": "1",
-      "created_at": "2023-02-03T13:43:22.566Z"
-    },
-    {
       "id": "nvn9i1937ldookuob",
       "type": "income",
       "name": "Viktor Tkachev",
@@ -275,6 +141,69 @@
       "account_id": "1",
       "user_id": "1",
       "created_at": "2023-02-03T16:22:55.898Z"
+    },
+    {
+      "id": "nvn9i1lksldwsm5ya",
+      "type": "income",
+      "name": "rttr",
+      "sum": 4000,
+      "account_id": "nvn9i18mbldomhdfk",
+      "user_id": "1",
+      "created_at": "2023-02-09T07:43:17.409Z"
+    },
+    {
+      "id": "nvn9i1lmyldwsq60k",
+      "type": "income",
+      "name": "Tkachev",
+      "sum": 4000,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2023-02-09T07:46:24.115Z"
+    },
+    {
+      "id": "nvn9i1lzbldwtrw4e",
+      "type": "income",
+      "name": "Tkachev",
+      "sum": 4000,
+      "account_id": "nvn9i161nldmunntm",
+      "user_id": "1",
+      "created_at": "2023-02-09T08:15:44.221Z"
+    },
+    {
+      "id": "nvn9i1m10ldwu3kaw",
+      "type": "income",
+      "name": "Tkachev",
+      "sum": 4000,
+      "account_id": "nvn9i161nldmunntm",
+      "user_id": "1",
+      "created_at": "2023-02-09T08:24:48.775Z"
+    },
+    {
+      "id": "nvn9i1m3wldwuic0w",
+      "type": "expense",
+      "name": "Tkachev",
+      "sum": 4000,
+      "account_id": "nvn9i161nldmunntm",
+      "user_id": "1",
+      "created_at": "2023-02-09T08:36:17.887Z"
+    },
+    {
+      "id": "nvn9i1m4lldwuo0bu",
+      "type": "income",
+      "name": "Tkachev",
+      "sum": 4000,
+      "account_id": "nvn9i161nldmunntm",
+      "user_id": "1",
+      "created_at": "2023-02-09T08:40:42.665Z"
+    },
+    {
+      "id": "nvn9i1nnpldwzlxe0",
+      "type": "expense",
+      "name": "Tkachev",
+      "sum": 4000,
+      "account_id": "nvn9i161nldmunntm",
+      "user_id": "1",
+      "created_at": "2023-02-09T10:59:03.623Z"
     }
   ]
 }

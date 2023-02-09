@@ -20,21 +20,20 @@ class CreateTransactionForm extends AsyncForm {
     let currentUser = User.current();
     const selectItem = this.element.querySelector( '.accounts-select' );
     if (currentUser) {
-      while (selectItem.options.length > 0) {
-        selectItem.remove(0);
-      }
       Account.list(currentUser, (err, response) => {
         if (response.success) {
+          while (selectItem.options.length > 0) {
+            selectItem.remove(0);
+          }
           Array.from(response.data, el => {
             let optionHtml = `<option value="${el.id}">${el.name}</option>`;
             selectItem.insertAdjacentHTML('beforeend', optionHtml);
           })
         }
       })
-    } else if (err) {
-      console.error('Элемент не найден')
     }
   }
+
 
   /**
    * Создаёт новую транзакцию (доход или расход)
@@ -47,7 +46,6 @@ class CreateTransactionForm extends AsyncForm {
       if (response.success) {
         App.update();
         this.element.reset();
-        // console.log(this.element);
         if (this.element.id === 'new-income-form') {
           App.getModal('newIncome').close();
         } else if (this.element.id === 'new-expense-form') {
